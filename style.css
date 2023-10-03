@@ -1,0 +1,172 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('images/bg-intro-desktop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(244, 72, 72, 0.948);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 7%;
+}
+.container-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   justify-content: center;
+}
+.container-text h1{
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.container-text p{
+    font-family: sans-serif;
+    color: #e6e1e1;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form >button{
+    border: 1px solid darkblue;
+    background-color: darkblue;
+    color: #fff;
+    box-shadow: 0 4px 5px #00000090;
+    font-family: sans-serif;
+    padding: 15px;
+    border-radius: 10px;
+}
+.form button span{
+    color: #cfcdcd;
+}
+form button{
+    width: 400px;
+    border: 1px solid rgb(41, 197, 6);
+    background-color: rgb(41, 197, 6);
+    border-radius: 5px;
+    color: #f1f1f1;
+    font-family: sans-serif;
+    padding: 10px;
+}
+.error{
+    border: 2px solid red;
+}
+.user{
+    display: flex;
+    flex-direction: column;
+}
+.user p{
+    transform: translate(45%,5px);
+    display: none;
+    color: red;
+    font-family: sans-serif;
+}
+.user img{
+    transform: translate(-50px,5px);
+    visibility: hidden;
+}
+button{
+    cursor: pointer;
+    transition: opacity 250ms;
+}
+button:hover{
+    opacity: 0.7;
+}
+form{
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 5px #00000090;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-right: 8px;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.btn p{
+    text-align: center;
+    font-size: 12px;
+    transform: translateX(-10px);
+    color: gray;
+    font-family: sans-serif;
+}
+.btn p span{
+    color: red;
+}
+.btn button{
+    box-shadow: 0 4px 5px #00000090;
+}
+input{
+    outline: 0;
+    padding: 10px;
+    width: 400px;
+    border-radius: 5px;
+}
+.none{
+    display: none;
+}
+@media screen and (max-width:800px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-text h1, .container p{
+        text-align: center;
+    }
+    .container-text p{
+        font-size: 15px;
+    }
+    form{
+        width: 350px;
+        align-items: center;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 310px;
+        gap: 5px;
+        margin-bottom: 40px;
+    }
+    input{
+        width: 280px;
+    }
+    .btn button{
+        width: 280px;
+    }
+    .container-text h1{
+        font-size: 30px;
+    }
+    .btn p{
+        transform: translateX(2px);
+    }
+    body{
+        background-image: url("images/bg-intro-mobile.png");
+    }
+    .user img{
+        transform: translate(250px, -32px);
+    }
+    .error-msg{
+        transform: translate(17%, -25px);
+    }
+    .user p{
+        transform: translate(0px,-15px);
+    }
+}
